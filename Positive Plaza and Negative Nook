@@ -1,0 +1,43 @@
+body {
+    background-color: #e0f7fa;
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#book-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.pop-up-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 0 #00acc1; /* Gives a 3D paper look */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pop-up-card:hover {
+    transform: scale(1.05);
+}
+
+.hidden { display: none; }
+
+#quiz-modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 4px solid #ff9800;
+}
