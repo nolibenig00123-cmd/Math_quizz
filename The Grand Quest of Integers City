@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quest Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="book-container">
+        <header>
+            <h1>THE GRAND QUEST OF INTEGERS CITY</h1>
+            <p>Explore Positive Plaza and Negative Nook!</p>
+        </header>
+
+        <section id="map">
+            <div class="pop-up-card" onclick="openQuest()">
+                <h2>Integer City Bridge</h2>
+                <p>Can you cross the Number Line?</p>
+                <button>Open Page</button>
+            </div>
+        </section>
+
+        <div id="quiz-modal" class="hidden">
+            <div class="quiz-content">
+                <h3>The Number Line Bridge Challenge</h3>
+                <p id="question">What happens to the value as you move to the RIGHT of Zero Square?</p>
+                <div class="options">
+                    <button onclick="answer(true)">Value Increases</button>
+                    <button onclick="answer(false)">Value Decreases</button>
+                </div>
+                <p id="feedback"></p>
+                <button onclick="closeQuest()">Back to Map</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
